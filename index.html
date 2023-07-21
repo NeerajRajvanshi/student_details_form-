@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="form.css" />
+    <script src="form.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Students Detail Form</h1>
+
+        <div class="form-box">
+          <input
+            type="rollno"
+            id="rollno"
+            name="rollno"
+            placeholder="Roll no"
+          /><br /><br />
+          <input
+            type="student name"
+            id="name"
+            name="name"
+            placeholder="Student name"
+          /><br /><br />
+          <input
+            type="subject"
+            id="subject"
+            name="subject"
+            placeholder="Subject"
+          /><br /><br />
+          <div>
+            <select name="storage" id="storage">
+              <option value="Local">Local Storage</option>
+              <option value="Session">Session Storage</option>
+              <option value="Cookies">Cookies Storage</option>
+            </select>
+          </div>
+          <br /><br />
+          <button class="submit_button" id="submit_btn" type="button" onclick="Submit()">
+            Submit
+          </button>
+          <br>
+          <button style="display: none;" class="submit_button" id="update_btn" type="button" onclick="updateHandler()">
+            Update
+          </button>
+        </div>
+      <h2>Students Information</h2>
+      <div id="output">
+        <!-- Display Student Data -->
+      </div>
+    </div>
+   
+  </body>
+</html>
